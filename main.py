@@ -45,6 +45,7 @@ if st.sidebar.button('Detect Objects'):
         try:
             # Perform detection
             res = model.predict(uploaded_image, conf=confidence)
+            print(res)
             boxes = res.pandas().xyxy[0]  # Get detection results
             res_plotted = res.render()[0]  # Get image with rendered detections
             
