@@ -4,7 +4,7 @@ import streamlit as st
 from ultralytics import YOLO
 
 # Set the path to the YOLOv8 model weights file
-model_path = 'D:/Feather Guardian A smart poultry litter tracking and alert system/New folder/Deployment/best.pt'
+model_path = 'best.pt'
 
 # Configure Streamlit page settings
 st.set_page_config(
